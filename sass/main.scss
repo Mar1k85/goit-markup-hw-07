@@ -3,10 +3,10 @@
 @import "./utils/base.scss";
 @import "./components/modal.scss";
 @import "./layouts/page-header";
-@import "./layouts/hero";
-@import "./layouts/benefits";
-@import "./layouts/work";
-@import "./layouts/team";
-@import "./layouts/clients";
+@import "./components/hero";
+@import "./components/benefits";
+@import "./components/work";
+@import "./components/team";
+@import "./components/clients";
 @import "./layouts/page-footer";
-@import "./layouts/portfolio";
+@import "./components/portfolio";

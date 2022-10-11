@@ -224,13 +224,42 @@ ul {
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.01em;
-  color: var(--textarea-color);
   -webkit-transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   outline: 0;
 }
 .textarea-field__text:hover, .textarea-field__text:focus {
   border-color: var(--accent-text-color);
+}
+.textarea-field__text::-webkit-input-placeholder {
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  color: var(--textarea-color);
+}
+.textarea-field__text::-moz-placeholder {
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  color: var(--textarea-color);
+}
+.textarea-field__text:-ms-input-placeholder {
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  color: var(--textarea-color);
+}
+.textarea-field__text::-ms-input-placeholder {
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  color: var(--textarea-color);
+}
+.textarea-field__text::placeholder {
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  color: var(--textarea-color);
 }
 
 .checkbox {
@@ -245,6 +274,7 @@ ul {
           justify-content: center;
   position: relative;
   margin-bottom: 30px;
+  letter-spacing: 0.03em;
 }
 .checkbox__input {
   position: absolute;
@@ -264,14 +294,14 @@ ul {
   border: 1px solid black;
   border-radius: 2px;
   top: 0;
-  left: 10px;
+  left: 8px;
   fill: var(--hero-primary-color);
   -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .checkbox__link {
   color: var(--accent-text-color);
-  margin-left: 2px;
+  margin-left: 9px;
 }
 
 .checkbox__input:checked ~ .checkbox__icon {
@@ -838,7 +868,7 @@ ul {
       -ms-flex-pack: center;
           justify-content: center;
   gap: 8px;
-  margin-bottom: 34px;
+  margin-bottom: 50px;
 }
 .filter-list__btn {
   padding: 6px 22px;

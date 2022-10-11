@@ -113,22 +113,27 @@
     font-size: 12px;
     line-height: 1.16;
     letter-spacing: 0.01em;
-    color: var(--textarea-color);
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     outline: 0;
     &:hover,
     &:focus {
       border-color: var(--accent-text-color);
     }
+    &::placeholder {
+      font-size: 12px;
+      line-height: 1.16;
+      letter-spacing: 0.01em;
+      color: var(--textarea-color);
+    }
   }
 }
-
 .checkbox {
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
   margin-bottom: 30px;
+  letter-spacing: 0.03em;
   &__input {
     position: absolute;
     white-space: nowrap;
@@ -146,14 +151,14 @@
     border: 1px solid black;
     border-radius: 2px;
     top: 0;
-    left: 10px;
+    left: 8px;
     fill: var(--hero-primary-color);
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
       border 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   &__link {
     color: var(--accent-text-color);
-    margin-left: 2px;
+    margin-left: 9px;
   }
 }
 .checkbox__input:checked ~ .checkbox__icon {
